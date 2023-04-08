@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ilmisima</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        body {
+            margin: 10px;
+        }
+        #collapses {
+            text-align: center;
+            font-size: 20px;
+        }
+        .main {
+            margin-top: 80px;
+        }
+
+        #rightbtn{
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+        .abc{
+            position: absolute;
+            top:0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-user" ></span>  ilmisima
+            </a>
+
+        </div>
+
+
+    </div>
+    <div class="abc">
+        <button id="rightbtn" onclick="next()" class="btn btn-success btn-lg">ileri <span class="glyphicon glyphicon-play"></span> </button>
+    </div>
+</nav>
+
+<div class="main">
+
+    <div id="alerts"></div>
+
+    <div class="jumbotron" style="text-align: center">
+        <h1>İlm-i sîma  <small>'ya hoşgeldiniz</small></h1>
+        <p> <span class="glyphicon glyphicon-info-sign"></span> İlm-i sîma, veya fizyonomi, insanın görüşünden ,kişiliğini tespit etmeye amaçlayan bir ilimdir.</p>
+        <p> Bu uygulama insan kişiliğini tahmin etmek için iki yöntem kullanır ;</p>
+        <p><span class="glyphicon glyphicon-book"></span> <b>Eski / Kitabi yöntem :</b> Fizyonomi hakkında çinde, avrupada ve islam ülkelerinde yazılmış kitaplardan faydalanır</p>
+        <p> <span class="glyphicon glyphicon-education"></span> <b> Bilimsel yöntem : </b> İnsanlardan toplanan bilgilerin yapay zeka algoritmaları ile veri madenciliği tabi tutulmasıdır. Sistem geri bildirimler ile öğrenir. </p>
+        <p>  </p>
+    </div>
+
+    <div id="collapses"></div>
+
+    <div class="collapse" id="sonuclar">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a data-toggle="tab" href="#kitabi"><span class="glyphicon glyphicon-book"></span> Eski / Kitabi Sonuçlar</a></li>
+            <li role="presentation"><a data-toggle="tab" href="#bilimsel"><span class="glyphicon glyphicon-education"></span> Bilimsel Sonuçlar</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="kitabi" class="tab-pane fade in active">
+                <table id="tablo1" class="table table-striped"></table>
+            </div>
+            <div id="bilimsel" class="tab-pane fade">
+                <h2>Bilimsel sonuçlar sunabilmemiz için, daha çok geri bildirim almalıyız. Lütfen kitabi sonuçların doğruluğunu değerlendirerek bize destek olun.</h2>
+                <table id="tablo2" class="table table-striped"></table>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="text-right">
+        <button id="leftbtn" onclick="back()" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> geri</button>
+    </p>
+
+</div>
+
+
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="karakteristik.js"></script>
+<script src="js/hexbin.js"></script>
+<script src="js/socket.io.js"></script>
+<script src="ayar.js"></script>
+
+<script type="text/javascript">
+
+
+    var current = -1;
+    var collapses = [];
+
+    createCollapses();
+    function createCollapses(){
+        var html = "";
+
+        gruplar.forEach(function(e,i){
+           var d = "<div class='well'><h1><span class='label label-info'>"+ e.ad+"</span></h1>";
+
+            e.elemanlar.forEach(function(j,k){
+                if(e.multi || e.elemanlar.length==1){
+                    d+="<label><input type='checkbox' id='o"+j+"' name='"+i+"'> " + karakteristlik.ozellik[j]+"</label><br>";
+
+                }else{
+                    d+="<label><input type='radio' id='o"+j+"' name='"+i+"'> " + karakteristlik.ozellik[j]+"</label><br>";
+                }
+            });
+
+            collapses.push(d+"</div>");
+        });
+
+        var divkapandi=true;
+        collapses.forEach(function(c,i){
+            if(i%3==0){
+                html+= '<div class="collapse" id="collapse'+Math.floor(i/3)+'">'+c;
+                divkapandi=false;
+            }
+            else if(i%3==2){
+                html+=c+"</div>";
+                divkapandi=false;
+            }else{
+                html+=c;
+            }
+        });
+
+        if(!divkapandi)
+            html+="</div>";
+
+        $("#collapses").html(html);
+    }
+
+    waitTime = 0;
+    function next(){
+        if(isReady()){
+            if(current==-1){
+                $(".jumbotron").hide();
+                bilgi("Her formu doldurmak zorunda değilsiniz. Doldurmak, daha iyi bir sonuç sağlamaz. Aksine yanlış tahminlere sebep olabilir. Lütfen emin olmadıklarınızı ve anlamadıklarınızı boş bırakın. ","Dikkat")
+            }
+            $("#collapse"+current).collapse('hide');
+            if(current<Math.floor(collapses.length/3)){
+                current++;
+                $("#collapse"+current).collapse('show');
+            }
+            else{
+                send();
+                current=Math.floor(collapses.length/3);
+            }
+            wait(500);
+        }
+    }
+
+    function wait(ms){
+        waitTime = Date.now()+ms;
+    }
+    function isReady(){
+        return Date.now()>waitTime;
+    }
+
+    function back(){
+        if(isReady() && current!=0){
+            $("#collapse"+current).collapse('hide');
+            current--;
+            $("#collapse"+current).collapse('show');
+            wait(500);
+        }
+    }
+
+    function getOzellikler(){
+        var binary="";
+        karakteristlik.ozellik.forEach(function(e,i){
+            if($("#o"+i).is(":checked"))
+                binary+="1";
+            else
+                binary+="0";
+        });
+
+        return binary;
+    }
+
+    var sonkarakter;
+    function send(){
+        for(var i=0;i<Math.floor(collapses.length/3);i++)
+            $("#collapse"+i).collapse('hide');
+
+
+        if(connected){
+            sonkarakter = toHEX(getOzellikler());
+            socket.emit('send',sonkarakter);
+        }
+    }
+
+    function hata(s,b){
+        $("#alerts").append('<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>'+b+'</h4> <p>'+s+'</p> </div>')
+    }
+    function bilgi(s,b){
+        $("#alerts").append('<div class="alert alert-info alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>'+b+'</h4> <p>'+s+'</p> </div>')
+    }
+    function feedback(kisilikno,val){
+        if(sonsonuc[kisilikno]==-1) val*=-1;
+        socket.emit('feedback',{
+            "karakter" : sonkarakter,
+            "kisilikno" : kisilikno,
+            "deger" : val
+        });
+
+        $("#tab"+kisilikno+" button").hide();
+    }
+
+    function reloadbtn(){
+        return "<br><center><button class='btn btn-warning' onclick='location.reload();'><span class='glyphicon glyphicon-refresh'></span> Ana Sayfaya Dön</button></center>"
+    }
+
+    // SOCK
+    var socket = io(AYAR.adres.socket);
+    var connected = false;
+    socket.emit("version",AYAR.version);
+    socket.on("hi",function(){
+        connected = true;
+    });
+    socket.on('hata',function(s){
+        hata(s,"Bir sorun oluştu...");
+    });
+    socket.on('disconnect', function (s) {
+        hata(new Date()+reloadbtn(),"Bağlantı koptu")
+    });
+    var sonsonuc;
+    socket.on('sonuc',function(sonuc){
+        sonsonuc = sonuc;
+        var text = [];
+        var list = [];
+        sonuc.forEach(function(e,i){
+            if(e!=0){
+                if(e==1){
+                    text.push(karakteristlik.sonuc[kisilikler[i].pozitif]) ;
+                }else{ //-1
+                    if(kisilikler[i].negatif==null) text.push(karakteristlik.sonuc[kisilikler[i].pozitif]+" değil");
+                    else text.push(karakteristlik.sonuc[kisilikler[i].negatif]) ;
+                }
+                list.push(i);
+            }
+        });
+        var html="<tr><th>#</th><th>Özellik</th><th>Doğru</th><th>Yanlış</th><th>Tam tersi</th></tr>";
+        text.forEach(function(e,i){
+            html+="<tr id='tab"+list[i]+"'><td>"+(i+1)+"</td><td><h3>"+e+"</h3></td><td><button class='btn btn-success' onclick='feedback("+list[i]+",1)'>Doğru</button></td><td><button class='btn btn-warning' onclick='feedback("+list[i]+",0)'>Yanlış</button></td><td><button class='btn btn-danger' onclick='feedback("+list[i]+",-1)'>Tam tersi</button></td></tr>";
+        });
+        $("#tablo1").html(html);
+        $("#sonuclar").collapse('show');
+        $("#rightbtn").hide();
+        $("#leftbtn").hide();
+        bilgi("<b>Karakter kodu</b> : "+sonkarakter+reloadbtn()+"<br><i>Uygulamayı test ettiğiniz için teşekkürler. Lütfen sonuçları değerlendirmeyi unutmayın</i>","Bilgi")
+    });
+    setInterval(function () {
+        if(!connected) {
+            hata("Bağlantı sorunu","Sunucuya erişilemedi");
+            socket.emit("version",AYAR.version);
+        }
+    },3000)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,839 @@
+### ilmisima android uygulamada kullanýlardan toplanan bilgilerdir !
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     iliskiler
+Instances:    14
+Attributes:   129
+              [list of attributes omitted]
+Test mode:    evaluate on training data
+
+=== Özelliklerin adlarý ===
+0	Enli Yüz
+1	Geniþ Yüz
+2	Kare Yüz
+3	Dar ve Zayýf Yüz
+4	Yanak Geniþ, Çene Dar Yüz
+5	Armut þekilli yüz
+6	Yaygýn ve Düz Yüz
+7	Geniþ üst bölümlü yüz
+8	Geniþ orta bölümlü yüz
+9	Geniþ alt bölümlü yüz
+10	Küçük üst bölümlü yüz
+11	Küçük orta bölümlü yüz
+12	Küçük alt bölümlü yüz
+13	Dýþ bükey yüz
+14	Aþýrý dýþ bükey yüz
+15	Ýç bükey yüz
+16	Aþýrý iç bükey yüz
+17	Dengeli yüz
+18	Yuvarlak Alýn
+19	Geriye eðimli alýn
+20	Düz alýn
+21	Kaþlar arasýnda çýkýntýlý alýn
+22	Yay kaþlar
+23	Düz kaþlar
+24	Keskin köþeli kaþlar
+25	Kaþ göz mesafesi uzak
+26	Kaþ göz mesafesi yakýn
+27	Kalýn ve tüylü kaþlar
+28	Çok ince kaþlar
+29	Baþý kalýn,sonu ince kaþlar
+30	Kalýnlýðý eþit kaþlar
+31	Baþý ince,sonu kalýn kaþlar
+32	Ortasý dolu kaþlar
+33	Uzun tüylü kaþlar
+34	Az kaþlar
+35	Baþta yukarý tüylü kaþlar
+36	Sona doðru azalan kaþlar
+37	Yukarý doðru açýlý göz
+38	Aþaðýya doðru açýlý göz
+39	Düz açýlý göz
+40	Dýþarý doðru patlak göz
+41	Ýçe doðru batýk göz
+42	Belirgin göz kapaklarý
+43	Az görünen göz kapaklarý
+44	Görünmeyen göz kapaklarý
+45	Büyük kulaklar
+46	Küçük kulaklar
+47	Belirgin kaplar (kulak)
+48	Belirgin iç çýkýntýlý kulak
+49	Kap ve çýkýntý arasýnda belirginlik olan kulak
+50	Kap ve çýkýntý arasýnda düzlük olan kulak
+51	Dik açýlý kulak
+52	Geriye açýlý kulak
+53	Kepçe kulak
+54	Yapýþýk kulak
+55	Yukarýya yapýþýk,aþaðýya açýk kulak
+56	Kulak memesi burnun altýnda
+57	Kulak ve kaþlar yukarýda
+58	Kulak ve kaþlar aþaðýda
+59	Büyük burun
+60	Uzun burun
+61	Kýsa burun
+62	Uzun ve düz burun
+63	Ýç bükey burun
+64	Kemerli burun
+65	Kemer üzerinde þiþlik
+66	Burnun üst kýsmýnda þiþlik
+67	Aþaðý doðru geniþ burun
+68	Ýnce burun
+69	Burun ucu açýsý yukarý
+70	Burun ucu düz ve açýsýz
+71	Burun ucu açýsý aþaðý
+72	Burun ucu aþaðý ve sivri
+73	Burun ucu yuvarlak ve þiþ
+74	Çýkýk yanaklar
+75	Dolgun yanaklar
+76	Dar yankalar
+77	Geniþ yanaklar
+78	Çenede gamze
+79	Burun ucunda gamze
+80	Yanaklarda gamze
+81	Büyük aðýz
+82	Küçük aðýz
+83	Aðýz açýsý yukarý
+84	Aðýz açýsý düz
+85	Aðýz açýsý aþaðý
+86	Dolgun alt ve üst dudak
+87	Dolgun alt dudak
+88	Dolgun üst dudak
+89	Çok ince dudaklar
+90	Ayrýk ön diþler
+91	Ýri ön diþler
+92	Dýþa çýkýk ön diþler
+93	Tabi doðal gülümseme
+94	Diþetleriyle gülümseme
+95	Gergin üst dudakla gülümseme
+96	Dudaklar kapalý gülümseme
+97	Eðik gülüþ
+98	Ýri çene kemiði
+99	Dar çene kemiði
+100	Kuvvetli ve dikkat çeken
+101	Dýþa çýkýk çene
+102	Geniþ çene
+103	Çok geniþ çene
+104	Uzun çene
+105	Küçük çene
+106	Geride çene
+107	Yuvarlak çene 
+108	Altý düz çene
+109	Yuvarlak çene
+110	Sivri çene
+111	Dýþa doðru sivri çene
+112	Alýndaki çapraz çizgiler
+113	Kaþlar arasýnda derin tek çizgi
+114	Kaþlar arasýnda çift çizgi
+115	Kaþlar arasýnda birçok dikey çizgi
+116	Gözler arasý üçgen
+117	Burun üstü yatay çizgiler
+118	Göz kenarýnda çizgiler
+119	Yanak üzerinde çapraz çizgiler
+120	Burun kenarýnda göze yakýn çizgiler
+121	Burun kenarýnda asaðý derin çizgiler
+122	Aðýz kenarýnda çeneye doðru çizgiler
+123	Çenede yay þeklinde çizgi
+124	Aðýz kenarýnda küçük çizgi
+125	Baþ tepesi alýndan yukarýda
+126	Alýn baþ tepesinden yukarýda
+
+
+==== ANLAMLAR ====
+
+	ozellik icin ;
+		0 ; o özelliðe sahip deðil
+		1 ; o özelliðe sahip
+
+-1 ; ACIMASIZ
+1 ; MERHAMETLI/ACIYAN
+0 ; MERHAMETLI veya ACIMASIZ deðil	
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+
+
+                Class
+
+Attribute          -1      0      1
+		MERHAMETLI ?	ACIMASIZ
+               (0.12) (0.47) (0.41)
+====================================
+ozellik0
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik1
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik2
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik3
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik4
+  0                2.0    5.0    5.0
+  1                1.0    4.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik5
+  0                2.0    6.0    7.0
+  1                1.0    3.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik6
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik7
+  0                1.0    8.0    4.0
+  1                2.0    1.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik8
+  0                1.0    5.0    4.0
+  1                2.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik9
+  0                1.0    5.0    4.0
+  1                2.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik10
+  0                1.0    8.0    5.0
+  1                2.0    1.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik11
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik12
+  0                2.0    6.0    6.0
+  1                1.0    3.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik13
+  0                2.0    5.0    6.0
+  1                1.0    4.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik14
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik15
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik16
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik17
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik18
+  0                1.0    6.0    3.0
+  1                2.0    3.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik19
+  0                1.0    7.0    7.0
+  1                2.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik20
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik21
+  0                2.0    4.0    2.0
+  1                1.0    5.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik22
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik23
+  0                1.0    7.0    2.0
+  1                2.0    2.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik24
+  0                2.0    2.0    6.0
+  1                1.0    7.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik25
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik26
+  0                1.0    7.0    7.0
+  1                2.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik27
+  0                2.0    3.0    2.0
+  1                1.0    6.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik28
+  0                1.0    1.0    1.0
+  1                2.0    8.0    7.0
+  [total]          3.0    9.0    8.0
+
+ozellik29
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik30
+  0                2.0    5.0    4.0
+  1                1.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik31
+  0                1.0    6.0    4.0
+  1                2.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik32
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik33
+  0                2.0    6.0    7.0
+  1                1.0    3.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik34
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik35
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik36
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik37
+  0                1.0    5.0    5.0
+  1                2.0    4.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik38
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik39
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik40
+  0                2.0    6.0    3.0
+  1                1.0    3.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik41
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik42
+  0                1.0    6.0    3.0
+  1                2.0    3.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik43
+  0                1.0    8.0    5.0
+  1                2.0    1.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik44
+  0                2.0    5.0    6.0
+  1                1.0    4.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik45
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik46
+  0                1.0    7.0    7.0
+  1                2.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik47
+  0                2.0    5.0    2.0
+  1                1.0    4.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik48
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik49
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik50
+  0                2.0    6.0    4.0
+  1                1.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik51
+  0                1.0    8.0    5.0
+  1                2.0    1.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik52
+  0                1.0    7.0    4.0
+  1                2.0    2.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik53
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik54
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik55
+  0                2.0    6.0    3.0
+  1                1.0    3.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik56
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik57
+  0                1.0    3.0    2.0
+  1                2.0    6.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik58
+  0                2.0    6.0    4.0
+  1                1.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik59
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik60
+  0                2.0    4.0    5.0
+  1                1.0    5.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik61
+  0                2.0    6.0    4.0
+  1                1.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik62
+  0                1.0    5.0    4.0
+  1                2.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik63
+  0                1.0    6.0    6.0
+  1                2.0    3.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik64
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik65
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik66
+  0                2.0    6.0    4.0
+  1                1.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik67
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik68
+  0                2.0    7.0    4.0
+  1                1.0    2.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik69
+  0                1.0    5.0    4.0
+  1                2.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik70
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik71
+  0                1.0    4.0    4.0
+  1                2.0    5.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik72
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik73
+  0                1.0    6.0    5.0
+  1                2.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik74
+  0                2.0    3.0    3.0
+  1                1.0    6.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik75
+  0                2.0    6.0    5.0
+  1                1.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik76
+  0                1.0    7.0    5.0
+  1                2.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik77
+  0                2.0    7.0    4.0
+  1                1.0    2.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik78
+  0                1.0    5.0    6.0
+  1                2.0    4.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik79
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik80
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik81
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik82
+  0                1.0    5.0    4.0
+  1                2.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik83
+  0                2.0    5.0    5.0
+  1                1.0    4.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik84
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik85
+  0                1.0    3.0    2.0
+  1                2.0    6.0    6.0
+  [total]          3.0    9.0    8.0
+
+ozellik86
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik87
+  0                1.0    5.0    3.0
+  1                2.0    4.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik88
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik89
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik90
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik91
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik92
+  0                2.0    7.0    3.0
+  1                1.0    2.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik93
+  0                2.0    8.0    5.0
+  1                1.0    1.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik94
+  0                2.0    6.0    3.0
+  1                1.0    3.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik95
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik96
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik97
+  0                1.0    4.0    7.0
+  1                2.0    5.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik98
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik99
+  0                2.0    5.0    4.0
+  1                1.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik100
+  0                1.0    6.0    5.0
+  1                2.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik101
+  0                1.0    7.0    4.0
+  1                2.0    2.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik102
+  0                1.0    7.0    6.0
+  1                2.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik103
+  0                2.0    7.0    5.0
+  1                1.0    2.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik104
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik105
+  0                2.0    6.0    6.0
+  1                1.0    3.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik106
+  0                1.0    6.0    5.0
+  1                2.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik107
+  0                2.0    6.0    4.0
+  1                1.0    3.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik108
+  0                1.0    6.0    5.0
+  1                2.0    3.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik109
+  0                2.0    5.0    4.0
+  1                1.0    4.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik110
+  0                2.0    7.0    3.0
+  1                1.0    2.0    5.0
+  [total]          3.0    9.0    8.0
+
+ozellik111
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik112
+  0                1.0    7.0    7.0
+  1                2.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik113
+  0                2.0    6.0    6.0
+  1                1.0    3.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik114
+  0                2.0    7.0    4.0
+  1                1.0    2.0    4.0
+  [total]          3.0    9.0    8.0
+
+ozellik115
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik116
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik117
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik118
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik119
+  0                2.0    7.0    6.0
+  1                1.0    2.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik120
+  0                2.0    7.0    7.0
+  1                1.0    2.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik121
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik122
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik123
+  0                2.0    8.0    6.0
+  1                1.0    1.0    2.0
+  [total]          3.0    9.0    8.0
+
+ozellik124
+  0                2.0    8.0    5.0
+  1                1.0    1.0    3.0
+  [total]          3.0    9.0    8.0
+
+ozellik125
+  0                2.0    8.0    7.0
+  1                1.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+ozellik126
+  0                2.0    6.0    1.0
+  1                1.0    3.0    7.0
+  [total]          3.0    9.0    8.0
+
+ozellik127
+  0                1.0    8.0    7.0
+  1                2.0    1.0    1.0
+  [total]          3.0    9.0    8.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          13               92.8571 %
+Kappa statistic                          0.8716
+Mean absolute error                      0.0275
+Root mean squared error                  0.1257
+Relative absolute error                  7.1147 %
+Root relative squared error             28.9805 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      35.7143 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     -1
+                 1,000    0,143    0,875      1,000    0,933      0,866    1,000     1,000     0
+                 0,833    0,000    1,000      0,833    0,909      0,861    1,000     1,000     1
+Weighted Avg.    0,929    0,071    0,938      0,929    0,928      0,873    1,000     1,000     
+
+=== Confusion Matrix ===
+
+ a b c   <-- classified as
+ 1 0 0 | a = -1
+ 0 7 0 | b = 0
+ 0 1 5 | c = 1
+

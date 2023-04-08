@@ -1,0 +1,8 @@
+{
+  "name": "ilmisima",
+  "version": "0.0.1",
+  "description": "fizyonomi uygulamas�",
+  "dependencies": {
+    "mysql": "2.0.0-alpha7"
+  }
+}

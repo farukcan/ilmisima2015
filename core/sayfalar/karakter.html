@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karakter Açma</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="karakteristik.js"></script>
+<script src="js/hexbin.js"></script>
+
+<script type="text/javascript">
+
+
+
+    var bin = "";
+    for(var i=0;i<127;i++){
+        bin+=""+Math.round(Math.random());
+    }
+
+    console.log(bin);
+    console.log(toHEX(bin));
+    console.log(toBIN(toHEX(bin),127));
+
+
+</script>
+</body>
+</html>

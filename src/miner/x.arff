@@ -1,0 +1,146 @@
+@relation iliskiler 
+@attribute ozellik0 {0,1}
+@attribute ozellik1 {0,1}
+@attribute ozellik2 {0,1}
+@attribute ozellik3 {0,1}
+@attribute ozellik4 {0,1}
+@attribute ozellik5 {0,1}
+@attribute ozellik6 {0,1}
+@attribute ozellik7 {0,1}
+@attribute ozellik8 {0,1}
+@attribute ozellik9 {0,1}
+@attribute ozellik10 {0,1}
+@attribute ozellik11 {0,1}
+@attribute ozellik12 {0,1}
+@attribute ozellik13 {0,1}
+@attribute ozellik14 {0,1}
+@attribute ozellik15 {0,1}
+@attribute ozellik16 {0,1}
+@attribute ozellik17 {0,1}
+@attribute ozellik18 {0,1}
+@attribute ozellik19 {0,1}
+@attribute ozellik20 {0,1}
+@attribute ozellik21 {0,1}
+@attribute ozellik22 {0,1}
+@attribute ozellik23 {0,1}
+@attribute ozellik24 {0,1}
+@attribute ozellik25 {0,1}
+@attribute ozellik26 {0,1}
+@attribute ozellik27 {0,1}
+@attribute ozellik28 {0,1}
+@attribute ozellik29 {0,1}
+@attribute ozellik30 {0,1}
+@attribute ozellik31 {0,1}
+@attribute ozellik32 {0,1}
+@attribute ozellik33 {0,1}
+@attribute ozellik34 {0,1}
+@attribute ozellik35 {0,1}
+@attribute ozellik36 {0,1}
+@attribute ozellik37 {0,1}
+@attribute ozellik38 {0,1}
+@attribute ozellik39 {0,1}
+@attribute ozellik40 {0,1}
+@attribute ozellik41 {0,1}
+@attribute ozellik42 {0,1}
+@attribute ozellik43 {0,1}
+@attribute ozellik44 {0,1}
+@attribute ozellik45 {0,1}
+@attribute ozellik46 {0,1}
+@attribute ozellik47 {0,1}
+@attribute ozellik48 {0,1}
+@attribute ozellik49 {0,1}
+@attribute ozellik50 {0,1}
+@attribute ozellik51 {0,1}
+@attribute ozellik52 {0,1}
+@attribute ozellik53 {0,1}
+@attribute ozellik54 {0,1}
+@attribute ozellik55 {0,1}
+@attribute ozellik56 {0,1}
+@attribute ozellik57 {0,1}
+@attribute ozellik58 {0,1}
+@attribute ozellik59 {0,1}
+@attribute ozellik60 {0,1}
+@attribute ozellik61 {0,1}
+@attribute ozellik62 {0,1}
+@attribute ozellik63 {0,1}
+@attribute ozellik64 {0,1}
+@attribute ozellik65 {0,1}
+@attribute ozellik66 {0,1}
+@attribute ozellik67 {0,1}
+@attribute ozellik68 {0,1}
+@attribute ozellik69 {0,1}
+@attribute ozellik70 {0,1}
+@attribute ozellik71 {0,1}
+@attribute ozellik72 {0,1}
+@attribute ozellik73 {0,1}
+@attribute ozellik74 {0,1}
+@attribute ozellik75 {0,1}
+@attribute ozellik76 {0,1}
+@attribute ozellik77 {0,1}
+@attribute ozellik78 {0,1}
+@attribute ozellik79 {0,1}
+@attribute ozellik80 {0,1}
+@attribute ozellik81 {0,1}
+@attribute ozellik82 {0,1}
+@attribute ozellik83 {0,1}
+@attribute ozellik84 {0,1}
+@attribute ozellik85 {0,1}
+@attribute ozellik86 {0,1}
+@attribute ozellik87 {0,1}
+@attribute ozellik88 {0,1}
+@attribute ozellik89 {0,1}
+@attribute ozellik90 {0,1}
+@attribute ozellik91 {0,1}
+@attribute ozellik92 {0,1}
+@attribute ozellik93 {0,1}
+@attribute ozellik94 {0,1}
+@attribute ozellik95 {0,1}
+@attribute ozellik96 {0,1}
+@attribute ozellik97 {0,1}
+@attribute ozellik98 {0,1}
+@attribute ozellik99 {0,1}
+@attribute ozellik100 {0,1}
+@attribute ozellik101 {0,1}
+@attribute ozellik102 {0,1}
+@attribute ozellik103 {0,1}
+@attribute ozellik104 {0,1}
+@attribute ozellik105 {0,1}
+@attribute ozellik106 {0,1}
+@attribute ozellik107 {0,1}
+@attribute ozellik108 {0,1}
+@attribute ozellik109 {0,1}
+@attribute ozellik110 {0,1}
+@attribute ozellik111 {0,1}
+@attribute ozellik112 {0,1}
+@attribute ozellik113 {0,1}
+@attribute ozellik114 {0,1}
+@attribute ozellik115 {0,1}
+@attribute ozellik116 {0,1}
+@attribute ozellik117 {0,1}
+@attribute ozellik118 {0,1}
+@attribute ozellik119 {0,1}
+@attribute ozellik120 {0,1}
+@attribute ozellik121 {0,1}
+@attribute ozellik122 {0,1}
+@attribute ozellik123 {0,1}
+@attribute ozellik124 {0,1}
+@attribute ozellik125 {0,1}
+@attribute ozellik126 {0,1}
+@attribute ozellik127 {0,1}
+@attribute kisilikdegeri {-1,0,1}
+
+@data
+0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,1,0,1,1,0,1,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1
+0,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,1,1,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,1,0,1,0,0,0,1,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1
+0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,1,0,1,0,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1
+0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1
+0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1
+0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,1,1,0,1,0,0,0,1,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bağlayıcı</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .output {
+            padding: 50px;
+        }
+        #output {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <table id="tablo" class="table table-bordered"></table>
+
+<div class="output">
+    <h2>JSON Çıktısı <button class="btn btn-default" onclick="generate()">Oluştur</button><button class="btn btn-default" onclick="load()">Yükle</button></h2>
+    <textarea id="output" class="form-control"></textarea>
+
+</div>
+
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="karakteristik.js"></script>
+<script type="text/javascript">
+
+    var w = [];
+    karakteristlik.sonuc.forEach(function(k){
+        var a = [];
+        for( k in karakteristlik.ozellik)
+            a.push(0);
+        w.push(a);
+    });
+
+    function generate(){
+        $("#output").val(JSON.stringify(w));
+    }
+
+    function load(){
+        w = JSON.parse( $("#output").val());
+        for(i in karakteristlik.ozellik){
+            var a = "";
+            for(x in karakteristlik.sonuc)
+                if(w[x][i]==1) a+=karakteristlik.sonuc[x]+",";
+            $("#sonuc"+i).html(a);
+        }
+
+    }
+
+    createTablo();
+    function createTablo(){
+        var a = "<tr><th>Özellik</th><th>Sonuç Ekle</th><th>Sonuçlar</th></tr>";
+        karakteristlik.ozellik.forEach(function(o,i){
+            a+="<tr><td>"+o+"</td><td>"+createForm(i)+"</td><td><span id='sonuc"+i+"'></span></td></tr>";
+        });
+        $("#tablo").html(a);
+    }
+
+    function createForm(i){
+        var ops = "";
+        karakteristlik.sonuc.forEach(function(o,m){
+            ops+="<option value="+m+">"+o+"</option>";
+        });
+        return "<select id='select"+i+"' class='form-control'>"+ops+"</select><button class='btn btn-primary btn-block' onclick='add("+i+")'>Ekle</button>";
+    }
+    function add(i){
+        var s = parseInt($("#select"+i).val());
+        if(w[s][i]==1) w[s][i]=0;
+        else w[s][i]=1;
+        var a = "";
+        for(x in karakteristlik.sonuc)
+                if(w[x][i]==1) a+=karakteristlik.sonuc[x]+",";
+        $("#sonuc"+i).html(a);
+        return false;
+    }
+
+    jQuery(window).bind(
+            "beforeunload",
+            function() {
+                return confirm("Do you really want to close?")
+            }
+    )
+
+</script>
+</body>
+</html>

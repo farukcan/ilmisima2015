@@ -1,0 +1,10 @@
+{
+  "name": "ilmisima",
+  "version": "0.0.1",
+  "description": "fizyonomi uygulamas�",
+  "dependencies": {
+    "fs-extra": "0.0.1",
+    "mysql": "2.0.0-alpha7",
+    "socket.io": "0.9.16"
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor Sayfamız</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .add {
+        display: flex;
+    }
+    .add li {
+        margin-right: 30px;
+    }
+    .output {
+        padding: 50px;
+    }
+    #output {
+        height: 300px;
+    }
+</style>
+<body>
+
+
+    <ul class="add">
+        <li>
+            <h2>Özellik</h2>
+            <form onsubmit="add();return false">
+                <input type="text" class="form-control" id="ozellikinput" >
+            </form>
+            <button class="btn btn-primary btn-block" onclick="add()">Ekle</button>
+            <select multiple id="ozelliklist" class="form-control">
+
+            </select>
+        </li>
+        <li>
+            <h2>Sonuç</h2>
+            <form onsubmit="addS();return false">
+                <input type="text" class="form-control" id="sonucinput">
+            </form>
+            <button class="btn btn-primary btn-block" onclick="addS()">Ekle</button>
+            <select multiple id="sonuclist" class="form-control">
+
+            </select>
+        </li>
+    </ul>
+
+
+
+    <div class="output">
+        <h2>JSON Çıktısı <button class="btn btn-default" onclick="generate()">Oluştur</button></h2>
+        <textarea id="output" class="form-control"></textarea>
+
+    </div>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function add(){
+            $('#ozelliklist').append($('<option>', {
+                value: 1,
+                text: $("#ozellikinput").val()
+            }));
+            $("#ozellikinput").val("");
+        }
+        function addS(){
+            $('#sonuclist').append($('<option>', {
+                value: 1,
+                text: $("#sonucinput").val()
+            }));
+            $("#sonucinput").val("");
+        }
+
+        function generate(){
+            var a = {
+                "ozellik" : [],
+                "sonuc" : []
+            };
+
+            $( "#ozelliklist option").each(function(){
+                a.ozellik.push($(this).text())
+            });
+            $( "#sonuclist option").each(function(){
+                a.sonuc.push($(this).text().toLowerCase())
+            });
+
+            a.sonuc = $.unique(a.sonuc);
+
+            $("#output").val(JSON.stringify(a));
+        }
+
+
+    </script>
+</body>
+</html>
